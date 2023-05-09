@@ -1,0 +1,28 @@
+header {
+    height: 80px;
+    background-color: aquamarine;
+    @include goflex;
+    & > a {
+        font-size: 50px;
+        color: $mycolor1;
+        &:hover {
+            font-size: 70px;
+        }
+    }
+    nav {
+        width: 500px;
+        ul {
+            @include goflex;
+            width: 100%;
+            li {
+                a {
+                    font-size: 24px;
+                    color: red;
+                    &:hover {
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
